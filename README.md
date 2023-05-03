@@ -1,16 +1,10 @@
-# sidemenu_navigation
+# Navegação Lateral com NavigationRail (Web)
 
-A new Flutter project.
+Esta POC(Proof of Concept) tem o objetivo de mostrar como se criar uma navegação lateral com o Widget NavigationRail.
+O NavigationRail é um componete muito interessante para se utilizar pois já possui mudanças de layout ao selecionar cada item automaticamente.
+É um componte fácil de ser utilizado em sistemas Web.
 
-## Getting Started
+## Informações do projeto:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter 3.7.3
+- Dart 2.19.2
