@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:sidemenu_navigation/app/screens/dashboard_page.dart';
 import 'package:sidemenu_navigation/app/screens/messages_page.dart';
@@ -28,13 +30,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Row(children: [
-      SizedBox(
-        width: 220,
-        child: Center(child: menuNavigation(_currentIndex)),
+      body: Row(
+        children: [
+          SizedBox(
+            width: 220,
+            child: Center(
+              child: menuNavigation(_currentIndex),
+            ),
+          ),
+          Expanded(child: _listPage[_currentIndex])
+        ],
       ),
-      Expanded(child: _listPage[_currentIndex])
-    ]));
+    );
   }
 
   Widget menuNavigation(int index) {
@@ -43,10 +50,9 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.blueGrey,
       destinations: const [
         NavigationRailDestination(
-          icon: Icon(
-            Icons.dashboard,
-            color: Colors.white,
-          ),
+          // selectedIcon: Icon(Icons.arrow_forward, color: Colors.white),
+
+          icon: SizedBox.shrink(),
           label: Text(
             'Dashboard',
             style: textStyle,
