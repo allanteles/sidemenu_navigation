@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Menu With NavigationRail',
       debugShowCheckedModeBanner: false,
+      //Alguma coisa comentada
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
