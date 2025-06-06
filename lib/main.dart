@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Menu With NavigationRail',
+      title: 'Menu de Navegação Lateral',
       // This is the theme of your application.
       debugShowCheckedModeBanner: false,
       //Alguma coisa comentada
